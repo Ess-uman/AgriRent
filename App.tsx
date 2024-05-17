@@ -2,9 +2,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { View } from 'react-native';
-import SplashScreen from './Main/App/SplashScreen';
-import LoginScreen from './Main/App/login';
-import styles from './Main/App/style';
+import SplashScreen from './App/SplashScreen';
+import LoginScreen from './App/login';
+import styles from './App/style';
 
 const Stack = createStackNavigator();
 
