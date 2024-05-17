@@ -4,10 +4,10 @@
     "slug": "Titi",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./App/assets/welcomelogo.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Tractor.jpg",
+      "image": "./App/assets/Tractor.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./App/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/adaptive-icon.png"
+      "favicon": "./App/assets/adaptive-icon.png"
     }
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { View } from 'react-native';
-import NextButton from './App/Welcome';
+import Welcome from './App/Welcome';
 import styles from './App/style';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <NextButton />
+      <Welcome />
     </View>
   );
 };
