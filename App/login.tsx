@@ -37,6 +37,10 @@ const LoginScreen: React.FC = () => {
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.signupContainer}>
+          <Text style={styles.signupText}>Don't have an account? <Text style={styles.signupLink}>Sign Up</Text></Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -52,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 40,
+    marginBottom: 20,
   },
   container: {
     flex: 1,
@@ -67,7 +71,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
-    marginBottom: 30,
+    marginBottom: 20,
     paddingLeft: 10,
   },
   button: {
@@ -81,6 +85,18 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 18,
+  },
+  signupContainer: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  signupText: {
+    fontSize: 16,
+    color: 'gray',
+  },
+  signupLink: {
+    color: '#5AE4A8',
+    fontWeight: 'bold',
   },
 });
 
