@@ -1,29 +1,19 @@
-import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-const LoginScreen: React.FC = () => {
+const SignupScreen: React.FC = () => {
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const navigation = useNavigation();
-
-  const handleLogin = () => {
-    if (username === 'user' && password === 'password') {
-      Alert.alert('Login Success', 'Welcome to the app!');
-    } else {
-      Alert.alert('Login Failed', 'Invalid username or password');
-    }
-  };
-
   const handleSignup = () => {
-    navigation.navigate('Signup');
+    // Handle signup logic
+    Alert.alert('Signup Success', 'Your account has been created!');
   };
 
   return (
     <View style={styles.screen}>
       <View style={styles.container}>
-        <Text style={styles.title}>Hello, Welcome Back</Text>
+        <Text style={styles.title}>Create an Account</Text>
         <Text style={styles.label}>Username</Text>
         <TextInput
           style={styles.input}
@@ -41,12 +31,8 @@ const LoginScreen: React.FC = () => {
           secureTextEntry
         />
 
-        <TouchableOpacity style={styles.button} onPress={handleLogin}>
-          <Text style={styles.buttonText}>Login</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.signupContainer} onPress={handleSignup}>
-          <Text style={styles.signupText}>Forgot Password? <Text style={styles.signupLink}>Reset</Text></Text>
+        <TouchableOpacity style={styles.button} onPress={handleSignup}>
+          <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -74,7 +60,7 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: 'gray',
+    borderColor: '#000',
     borderWidth: 1,
     borderRadius: 5,
     marginBottom: 20,
@@ -92,18 +78,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
   },
-  signupContainer: {
-    marginTop: 20,
-    alignItems: 'center',
-  },
-  signupText: {
-    fontSize: 16,
-    color: 'gray',
-  },
-  signupLink: {
-    color: '#5AE4A8',
-    fontWeight: 'bold',
-  },
 });
 
-export default LoginScreen;
+export default SignupScreen; // Ensure default export
