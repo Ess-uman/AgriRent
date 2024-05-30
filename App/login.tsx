@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
@@ -15,8 +16,8 @@ const LoginScreen: React.FC = () => {
 
   return (
     <View style={styles.screen}>
-      <Text style={styles.title}>Hello, Welcome Back</Text>
       <View style={styles.container}>
+        <Text style={styles.title}>Hello, Welcome Back</Text>
         <Text style={styles.label}>Username</Text>
         <TextInput
           style={styles.input}
@@ -59,7 +60,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   container: {
-    flex: 1,
     justifyContent: 'center',
   },
   label: {
